@@ -1,0 +1,130 @@
+import { BottomTabItem, StatItem, StudentProfile, SubjectItem } from '../types';
+
+export const mockStudent: StudentProfile = {
+  id: 'SV2026001',
+  name: 'Nguyễn Văn An',
+  studentCode: 'B22DCCN001',
+  greeting: 'Xin chào,',
+  avatarUrl: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80',
+  unreadNotifications: 3,
+};
+
+export const mockStats: StatItem[] = [
+  {
+    id: 'stat-subjects',
+    title: 'Tổng môn học',
+    value: 6,
+    unit: 'môn',
+    icon: '📚',
+    backgroundColor: '#EFF6FF',
+    iconColor: '#2563EB',
+  },
+  {
+    id: 'stat-assignments',
+    title: 'Số bài tập',
+    value: 12,
+    unit: 'bài',
+    icon: '📝',
+    backgroundColor: '#FEF3C7',
+    iconColor: '#D97706',
+  },
+  {
+    id: 'stat-completed',
+    title: 'Đã hoàn thành',
+    value: 2,
+    unit: 'môn',
+    icon: '🎯',
+    backgroundColor: '#DCFCE7',
+    iconColor: '#16A34A',
+  },
+];
+
+export const mockSubjects: SubjectItem[] = [
+  {
+    id: 'sub-01',
+    name: 'Lập trình React Native',
+    code: 'MOB306',
+    instructor: 'ThS. Trần Hoàng Nam',
+    lessonCount: 20,
+    completedLessons: 16,
+    progressPercent: 80,
+    imageUrl: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=200&q=80',
+    icon: '📱',
+    category: 'Chuyên ngành',
+  },
+  {
+    id: 'sub-02',
+    name: 'Thiết kế giao diện UI/UX Mobile',
+    code: 'UIX201',
+    instructor: 'Cô Lê Thu Trang',
+    lessonCount: 15,
+    completedLessons: 15,
+    progressPercent: 100,
+    imageUrl: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=200&q=80',
+    icon: '🎨',
+    category: 'Kỹ năng số',
+  },
+  {
+    id: 'sub-03',
+    name: 'Cơ sở dữ liệu nâng cao',
+    code: 'DBA202',
+    instructor: 'TS. Vũ Minh Quân',
+    lessonCount: 18,
+    completedLessons: 8,
+    progressPercent: 45,
+    imageUrl: 'https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=200&q=80',
+    icon: '💾',
+    category: 'Cốt lõi',
+  },
+  {
+    id: 'sub-04',
+    name: 'Cấu trúc dữ liệu & Giải thuật',
+    code: 'DSA102',
+    instructor: 'ThS. Nguyễn Duy Hưng',
+    lessonCount: 24,
+    completedLessons: 24,
+    progressPercent: 100,
+    imageUrl: 'https://images.unsplash.com/photo-1516116211227-bbc13c74a50d?auto=format&fit=crop&w=200&q=80',
+    icon: '🧩',
+    category: 'Cơ sở ngành',
+  },
+  {
+    id: 'sub-05',
+    name: 'Phát triển ứng dụng Web Fullstack',
+    code: 'WEB302',
+    instructor: 'ThS. Phạm Quốc Tuấn',
+    lessonCount: 22,
+    completedLessons: 13,
+    progressPercent: 60,
+    imageUrl: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=200&q=80',
+    icon: '🌐',
+    category: 'Chuyên ngành',
+  },
+];
+
+export const bottomTabs: BottomTabItem[] = [
+  {
+    key: 'home',
+    label: 'Trang chủ',
+    icon: '🏠',
+    activeIcon: '🏠',
+  },
+  {
+    key: 'subjects',
+    label: 'Môn học',
+    icon: '📖',
+    activeIcon: '📖',
+  },
+  {
+    key: 'assignments',
+    label: 'Bài tập',
+    icon: '✍️',
+    activeIcon: '✍️',
+  },
+  {
+    key: 'profile',
+    label: 'Cá nhân',
+    icon: '👤',
+    activeIcon: '👤',
+  },
+];
