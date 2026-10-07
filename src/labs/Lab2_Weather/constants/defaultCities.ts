@@ -1,0 +1,118 @@
+import { LocationInfo } from '../types/weather';
+
+export const POPULAR_CITIES: LocationInfo[] = [
+  {
+    name: 'Hà Nội',
+    country: 'Việt Nam',
+    admin1: 'Hà Nội',
+    latitude: 21.0285,
+    longitude: 105.8542,
+  },
+  {
+    name: 'TP. Hồ Chí Minh',
+    country: 'Việt Nam',
+    admin1: 'Hồ Chí Minh',
+    latitude: 10.8231,
+    longitude: 106.6297,
+  },
+  {
+    name: 'Đà Nẵng',
+    country: 'Việt Nam',
+    admin1: 'Đà Nẵng',
+    latitude: 16.0544,
+    longitude: 108.2022,
+  },
+  {
+    name: 'Hải Phòng',
+    country: 'Việt Nam',
+    admin1: 'Hải Phòng',
+    latitude: 20.8449,
+    longitude: 106.6881,
+  },
+  {
+    name: 'Cần Thơ',
+    country: 'Việt Nam',
+    admin1: 'Cần Thơ',
+    latitude: 10.0452,
+    longitude: 105.7469,
+  },
+  {
+    name: 'Đà Lạt',
+    country: 'Việt Nam',
+    admin1: 'Lâm Đồng',
+    latitude: 11.9404,
+    longitude: 108.4583,
+  },
+  {
+    name: 'Nha Trang',
+    country: 'Việt Nam',
+    admin1: 'Khánh Hòa',
+    latitude: 12.2388,
+    longitude: 109.1967,
+  },
+  {
+    name: 'Huế',
+    country: 'Việt Nam',
+    admin1: 'Thừa Thiên Huế',
+    latitude: 16.4637,
+    longitude: 107.5909,
+  },
+  {
+    name: 'Sa Pa',
+    country: 'Việt Nam',
+    admin1: 'Lào Cai',
+    latitude: 22.3364,
+    longitude: 103.8438,
+  },
+  {
+    name: 'Quy Nhơn',
+    country: 'Việt Nam',
+    admin1: 'Bình Định',
+    latitude: 13.783,
+    longitude: 109.2197,
+  },
+  {
+    name: 'Tokyo',
+    country: 'Nhật Bản',
+    admin1: 'Tokyo',
+    latitude: 35.6762,
+    longitude: 139.6503,
+  },
+  {
+    name: 'Seoul',
+    country: 'Hàn Quốc',
+    admin1: 'Seoul',
+    latitude: 37.5665,
+    longitude: 126.978,
+  },
+  {
+    name: 'Singapore',
+    country: 'Singapore',
+    admin1: 'Singapore',
+    latitude: 1.3521,
+    longitude: 103.8198,
+  },
+  {
+    name: 'Paris',
+    country: 'Pháp',
+    admin1: 'Île-de-France',
+    latitude: 48.8566,
+    longitude: 2.3522,
+  },
+  {
+    name: 'London',
+    country: 'Vương quốc Anh',
+    admin1: 'England',
+    latitude: 51.5074,
+    longitude: -0.1278,
+  },
+  {
+    name: 'New York',
+    country: 'Hoa Kỳ',
+    admin1: 'New York',
+    latitude: 40.7128,
+    longitude: -74.006,
+  },
+];
+
+export const DEFAULT_CITY: LocationInfo = POPULAR_CITIES[0]; // Hà Nội

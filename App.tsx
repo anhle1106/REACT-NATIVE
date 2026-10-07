@@ -5,7 +5,7 @@ import { LabSelector } from './src/components/LabSelector';
 import { LABS } from './src/labs';
 
 export default function App() {
-  const [currentLabId, setCurrentLabId] = useState<string>('lab1');
+  const [currentLabId, setCurrentLabId] = useState<string>('lab_weather');
 
   const activeLab = LABS.find((l) => l.id === currentLabId) || LABS[0];
   const CurrentLabComponent = activeLab.component;
