@@ -1,6 +1,8 @@
 import React from 'react';
 import { Lab1Screen } from './Lab1_StudentHome';
 import { WeatherScreen } from './Lab2_Weather';
+import { ChatApp } from './Lab3_Chat';
+import { PlannerApp } from './De3_QuanLyKeHoachCaNhan';
 
 export interface LabDefinition {
   id: string;
@@ -11,6 +13,20 @@ export interface LabDefinition {
 }
 
 export const LABS: LabDefinition[] = [
+  {
+    id: 'de3_planner',
+    code: 'Đề 3',
+    title: 'Ứng dụng Quản lý Kế hoạch Cá nhân',
+    description: 'Quản lý công việc, tiến độ, lọc trạng thái, sắp xếp, cảnh báo quá hạn',
+    component: PlannerApp,
+  },
+  {
+    id: 'lab_chat',
+    code: 'Lab 3',
+    title: 'Ứng dụng Chat (3 Màn hình)',
+    description: 'Đăng nhập, danh sách tin nhắn Messenger, chi tiết cuộc trò chuyện 2 bên',
+    component: ChatApp,
+  },
   {
     id: 'lab_weather',
     code: 'Lab 2',
@@ -27,5 +43,5 @@ export const LABS: LabDefinition[] = [
   },
 ];
 
-export { Lab1Screen, WeatherScreen };
+export { Lab1Screen, WeatherScreen, ChatApp, PlannerApp };
 
